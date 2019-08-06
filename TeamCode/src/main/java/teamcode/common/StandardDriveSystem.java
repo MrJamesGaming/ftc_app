@@ -2,7 +2,7 @@ package teamcode.common;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-public class StandardDriveSystem extends FourWheelDriveSystem {
+public  class StandardDriveSystem extends FourWheelDriveSystem {
 
     private final double wheelDiameterInches;
 
@@ -11,11 +11,11 @@ public class StandardDriveSystem extends FourWheelDriveSystem {
         this.wheelDiameterInches = wheelDiameterInches;
     }
 
-    public void move(Vector2 velocity, double distance) {
+    public void move(Vector velocity, double distance) {
 
     }
 
-    public void moveContinuously(Vector2 velocity) {
+    public void moveContinuously(Vector velocity) {
 
     }
 

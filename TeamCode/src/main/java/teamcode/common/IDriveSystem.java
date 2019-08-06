@@ -8,14 +8,14 @@ public interface IDriveSystem {
      * @param velocity the velocity
      * @param distance the distance to be travelled
      */
-    void move(Vector2 velocity, double distance);
+    void move(Vector velocity, double distance);
 
     /**
      * Moves the robot continuously in the direction specified by the vector components.
      *
      * @param velocity the velocity
      */
-    void moveContinuously(Vector2 velocity);
+    void moveContinuously(Vector velocity);
 
     /**
      * Turns the robot clockwise over a specified angle (or counterclockwise if the angle is negative).
