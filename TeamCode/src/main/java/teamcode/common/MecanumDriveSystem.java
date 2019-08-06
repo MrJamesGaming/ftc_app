@@ -12,7 +12,7 @@ public class MecanumDriveSystem extends FourWheelDriveSystem {
     }
 
     @Override
-    public void move(Vector2 velocity, double distance) {
+    public void move(Vector velocity, double distance) {
         int flPos = 0;
         int frPos = 0;
         int blPos = 0;

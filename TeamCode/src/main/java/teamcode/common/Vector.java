@@ -1,6 +1,6 @@
 package teamcode.common;
 
-public class Vector2 {
+public class Vector {
 
     public static final Vector2 ZERO = new Vector2(0.0, 0.0);
     public static final Vector2 FORWARD = new Vector2(0.0, 1.0);
@@ -8,7 +8,7 @@ public class Vector2 {
 
     private final double x, y;
 
-    public Vector2(double x, double y) {
+    public Vector(double x, double y) {
         this.x = x;
         this.y = y;
     }
