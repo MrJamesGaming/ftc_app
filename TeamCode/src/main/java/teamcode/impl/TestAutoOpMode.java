@@ -6,7 +6,8 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 import teamcode.common.IDriveSystem;
 import teamcode.common.StandardDriveSystem;
-import teamcode.common.Vector2;
+import teamcode.common.Vector;
+import teamcode.impl.TTRobot;
 
 /**
  * Makes the robot turn clockwise
@@ -32,10 +33,10 @@ public class TestAutoOpMode extends LinearOpMode {
         telemetry.addData("y", gamepad1.left_stick_y);
         telemetry.update();
         if (gamepad1.left_stick_y != 0.0 && gamepad1.left_stick_x != 0.0) {
-            Vector2 velocity = new Vector2(gamepad1.left_stick_x, gamepad1.left_stick_y);
+            Vector velocity = new Vector(gamepad1.left_stick_x, gamepad1.left_stick_y);
             robot.getDriveSystem().moveContinuously(velocity);
         } else {
-            robot.getDriveSystem().moveContinuously(Vector2.ZERO);
+            robot.getDriveSystem().moveContinuously(Vector.ZERO);
         }
     }
 

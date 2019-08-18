@@ -2,9 +2,9 @@ package teamcode.common;
 
 public class Vector {
 
-    public static final Vector2 ZERO = new Vector2(0.0, 0.0);
-    public static final Vector2 FORWARD = new Vector2(0.0, 1.0);
-    public static final Vector2 RIGHT = new Vector2(1.0, 0.0);
+    public static final Vector ZERO = new Vector(0.0, 0.0);
+    public static final Vector FORWARD = new Vector(0.0, 1.0);
+    public static final Vector RIGHT = new Vector(1.0, 0.0);
 
     private final double x, y;
 
@@ -44,20 +44,20 @@ public class Vector {
     /**
      * Returns a new vector without modifying this one.
      */
-    public Vector2 multiply(double d) {
-        return new Vector2(x * d, y * d);
+    public Vector multiply(double d) {
+        return new Vector(x * d, y * d);
     }
 
-    public Vector2 normalized() {
+    public Vector normalized() {
         double magnitude = magnitude();
-        return new Vector2(x / magnitude, y / magnitude);
+        return new Vector(x / magnitude, y / magnitude);
     }
 
-    public double dotProduct(Vector2 other) {
+    public double dotProduct(Vector other) {
         return this.x * other.x + this.y * other.y;
     }
 
-    public double angleDegreesBetween(Vector2 other) {
+    public double angleDegreesBetween(Vector other) {
         return Math.toDegrees((Math.acos(dotProduct(other) / (magnitude() * other.magnitude()))));
     }
 
