@@ -34,7 +34,8 @@ public class MecanumDriveSystem extends FourWheelDriveSystem {
     }
 
     @Override
-    public void moveContinuously(Vector2 velocity) {
+
+    public void moveContinuously(Vector velocity) {
         if (velocity.isZero()) {
             zeroMotorPower();
             return;

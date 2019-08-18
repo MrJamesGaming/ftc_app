@@ -54,7 +54,8 @@ public class StandardDriveSystem extends FourWheelDriveSystem {
 
     }
 
-    public void moveContinuously(Vector2 velocity) {
+
+    public void moveContinuously(Vector velocity) {
         if (velocity.isZero()) {
             zeroMotorPower();
             return;
